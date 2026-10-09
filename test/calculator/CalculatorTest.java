@@ -1,4 +1,7 @@
+package calculator;
+
 import org.junit.jupiter.api.Test;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -30,5 +33,9 @@ public class CalculatorTest {
                 ArithmeticException.class,
                 () -> calculator.divide(10, 0)
         );
+    }
+    @Test
+    void testMain() {
+        calculator.main(new String[]{});
     }
 }
